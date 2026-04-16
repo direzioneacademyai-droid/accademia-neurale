@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Accademia Neurale Libera - Sito Ufficiale</title>
+    <style>
+        /* Questo è il trucco per avere il sito nero e moderno */
+        body {
+            background-color: black;
+            color: white;
+            font-family: sans-serif;
+            margin: 0;
+            text-align: center;
+        }
+
+        /* Lo stile della sfera di Astra */
+        .astra-sfera {
+            width: 100px;
+            height: 100px;
+            background-color: #00f2ff;
+            border-radius: 50%;
+            margin: 50px auto;
+            box-shadow: 0 0 30px #00f2ff;
+        }
+
+        /* Lo stile del bottone per il codice */
+        .bottone-accesso {
+            background-color: #00f2ff;
+            color: black;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div style="margin-top: 20px;">▲ ACCADEMIA NEURALE LIBERA</div>
+
+    <div class="astra-sfera"></div>
+
+    <h1>Benvenuto nell'Accademia</h1>
+    <p>La tua porta d'accesso all'intelligenza del futuro.</p>
+
+    <div id="zona-login">
+        <input type="password" id="codice" placeholder="Inserisci Codice Pilota" style="padding: 10px; border-radius: 5px; border: none;">
+        <br><br>
+        <button class="bottone-accesso" onclick="verifica()">INIZIA ORA</button>
+    </div>
+
+    <script>
+        // Questa funzione serve a controllare se il codice è giusto
+        function verifica() {
+            var input = document.getElementById('codice').value;
+            if (input === "ASTRA2026") {
+                alert("Codice Corretto! Benvenuto Socio.");
+                // Qui in futuro caricheremo la scrivania con i corsi
+            } else {
+                alert("Codice Errato. Prova con ASTRA2026");
+            }
+        }
+    </script>
+
+</body>
+</html>
